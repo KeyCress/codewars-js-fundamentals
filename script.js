@@ -9,16 +9,24 @@
 // likes ["Alex", "Jacob", "Mark", "Max"] -- must be "Alex, Jacob and 2 others like this"
 
 function likes(names) {
-	//TODO
+	// If there are no names on the array
 	if (names.length === 0) {
 		return `no one likes this`;
-	} else if (names.length === 1) {
+	}
+	// If there is just one
+	else if (names.length === 1) {
 		return `${names[0]} likes this`;
-	} else if (names.length === 2) {
+	}
+	// Two Names
+	else if (names.length === 2) {
 		return `${names[0]} and ${names[1]} like this`;
-	} else if (names.length === 3) {
+	}
+	// Three Names
+	else if (names.length === 3) {
 		return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-	} else {
+	}
+	// 4 or more Names
+	else {
 		return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 	}
 }

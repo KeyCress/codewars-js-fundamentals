@@ -21,12 +21,14 @@ function getMiddle(s) {
 	// If the String is even
 	if (s.length % 2 === 0) {
 		const startIndex = s.length / 2 - 1;
-		const endIndex = 2;
-		return s.substr(startIndex, endIndex);
+		const endIndex = startIndex + 2;
+		// console.log(s, startIndex, endIndex);
+		return s.substring(startIndex, endIndex);
 	}
 	// If the String is odd
 	else {
-		const index = s.length / 2 - 0.5;
-		return s.substr(index, 1);
+		const startIndex = s.length / 2 - 0.5;
+		const endIndex = startIndex + 1;
+		return s.substring(startIndex, endIndex);
 	}
 }

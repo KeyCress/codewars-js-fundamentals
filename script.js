@@ -27,7 +27,7 @@ function getMiddle(s) {
 	}
 	// If the String is odd
 	else {
-		const startIndex = s.length / 2 - 0.5;
+		const startIndex = Math.floor(s.length / 2);
 		const endIndex = startIndex + 1;
 		return s.substring(startIndex, endIndex);
 	}
